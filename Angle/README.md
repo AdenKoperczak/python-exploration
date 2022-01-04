@@ -40,14 +40,14 @@ the following units
 "D": degrees minutes seconds
 
 The alignment field consists of the standard format_spec for a string. This is
-indended to allow for the use of the fill, align, and width fields to the whole
+indended to allow for the use of the fill, align, and width fields on the whole
 string.
 
 The number field consists of the standard format_spec for a number. This is used
-to format the numeric output of the output. This is primarly intended for formatting
-presission and other numeric only constants.
-For degrees minutes seconds, the number field is only used for the seconds.
-The fill option cannot be "(" as that indicates an alignment option.
+to format the numeric sections of the output. This is primarly intended for formatting
+presission and other numeric only fields.
+For degrees minutes seconds, the number field only affects seconds.
+The fill field cannot be "(" without an aligment field as it indicates an alignment field.
 
 The unitDisplay field specifies if and how a unit should be added to the output.
 This field does nothing with degrees minutes seconds because units are 
